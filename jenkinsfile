@@ -1,6 +1,6 @@
 pipeline {
   agent any 
-  stages{
+  stages {
     stage('Starting...'){
       steps {
         echo 'Starting'
@@ -8,13 +8,13 @@ pipeline {
       }   
      }
     stage('Compiling'){
-      step{
+      steps {
       bat 'javac Start.java'
       }
     
     }
-    stages('Testing'){
-     step{
+    stage('Testing'){
+     steps {
       bat 'java Start'
      }
     }
