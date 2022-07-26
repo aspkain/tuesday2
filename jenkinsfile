@@ -3,20 +3,10 @@ pipeline {
   stages {
     stage('Starting...'){
       steps {
-        echo 'Starting'
-      
+        echo 'Initialize'
+        }
       }   
-     }
-    stage('Compiling'){
-      steps {
-      bat 'javac Start.java'
-      }
     
     }
-    stage('Testing'){
-     steps {
-      bat 'java Start'
-     }
+    
     }
-  }
-}
