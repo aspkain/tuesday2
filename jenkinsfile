@@ -1,0 +1,22 @@
+pipeline {
+  agent any 
+  stages{
+    stage('Starting...'){
+      steps {
+        echo 'Starting'
+      
+      }   
+     }
+    stage('Compiling'){
+      step{
+      bat 'javac Start.java'
+      }
+    
+    }
+    stages('Testing'){
+     step{
+      bat'java.Start'
+     }
+    }
+  }
+}
