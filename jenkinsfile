@@ -10,3 +10,10 @@ pipeline {
     }
     
     }
+stage ('Complie'){
+step (
+bat 'javac Start.java'
+bat' java Start'
+}
+}
+}
